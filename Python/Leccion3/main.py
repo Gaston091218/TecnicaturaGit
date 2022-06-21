@@ -1,16 +1,43 @@
-# This is a sample Python script.
+# Ciclo while ( mientras o durante.
+"""
+contador = 0
+while contador < 78:
+    print ("Ejecutamos nuestro ciclo while", contador)
+    contador += 1
+else:
+    print ("Fin del ciclo while")
+# Ejercicio imprimir Numeros del 0 al 5 con el ciclo while
+maximo = 5
+contador = 0
+while contador <= maximo:
+    print(contador)
+    contador +=1
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+minimo = 1
+contador = 5
+while contador >= minimo:
+    print(contador)
+    contador -= 1
+"""
+# Ciclo for
+cadena = "Hello"
+for letra in cadena:
+    print(letra)
+else:
+    print("Fin del ciclo for")
+# Palabra reservada Break
+for letra in "Alemania":
+    if letra == "a":
+        print(f"letra encontrada: {letra}")
+        break
+else:
+    print("Fin del cliclo for")
+# Palabra reservada continue
+for i in range(6):
+    if i % 2 == 0:
+        print(f"Valor: {i}")
+#
+for i in range(6):
+    if i % 2 != 0:
+        continue
+    print(f"Valor: {i}")
