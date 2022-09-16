@@ -283,7 +283,7 @@ print(diccionario2)
 seleccionArgentina = {
     10:{"Nombre": "Lionel Messi"," Edad": 35,"Altura":1.70, "Precio": "50 Millones", "Posicion": "Extremo Derecho",},
     11:{"Nombre": "Angel Di Maria"," Edad": 34,"Altura":1.80, "Precio": "12 Millones", "Posicion": "Extremo Derecho"},
-    24:{"Nombre": "Paulo Dybala"," Edad": 28,"Altura":1.77, "Precio": "35 Millones", "Posicion": "Media punta"},
+    21:{"Nombre": "Paulo Dybala"," Edad": 28,"Altura":1.77, "Precio": "35 Millones", "Posicion": "Media punta"},
     19:{"Nombre": "Nicolas Otamendi"," Edad": 34,"Altura":1.83, "Precio": "3.5 Millones", "Posicion": "Defensor Central"},
     1:{"Nombre": "Franco Armani"," Edad": 35,"Altura":1.89, "Precio": "3.5 Millones", "Posicion": "Arquero"},
     22:{"Nombre": "Julian Alvarez"," Edad": 22,"Altura":1.70, "Precio": "23 Millones", "Posicion": "Delantero"},
@@ -312,6 +312,39 @@ print(pila)
 
 #Sacamos elementos desde el final
 elementoBorrado = pila.pop( )#Quita el ultimo elemento y lo guarda en la variable
+print(f"Sacamos el elemento: {elementoBorrado}")
+print(f"La pia ahora quedo así: {pila}")
+
+#Colas con listas
+#Estrucutra de datos tipo fifo( first input / first output)
+cola = ["Gaston","Diego", "Fer","Maxi"]
+
+#Agregamos elementos al final de la cola
+cola.append("Marina")
+cola.append("lorena")
+print(cola)
+
+#Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+seRetira = cola.pop(0)
+print(cola)
+seRetira = cola.pop(0)
+print(cola)
+seRetira = cola.pop(0)
+print(cola)
+seRetira = cola.pop(0)
+print(cola)
+seRetira = cola.pop(0)
+print(f"No quedan mas clientes ")
+
+#############################################
+# Recorremos el Diccionario seleccionArgentina(otra forma)
+
+for i in seleccionArgentina:
+    print(f"\n {i} ---> {seleccionArgentina[i]}")
+
 
 
 
