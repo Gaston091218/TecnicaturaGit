@@ -8,3 +8,4 @@ factorial = 1 # La variable para calcular el factorial
 for i in range (1, numero+1):
     factorial *= i
 print(f"\n El factorial del número {numero} positivo ingresado es :{factorial}")
+
